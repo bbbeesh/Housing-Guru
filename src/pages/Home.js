@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import Hero from "../components/Hero";
 import Services from "../components/Services";
+import FeaturedRooms from "../components/FeaturedRooms";
+
 import { Banner } from "../components/Banner";
 import { Link } from "react-router-dom";
 export default class Home extends Component {
@@ -18,6 +20,7 @@ export default class Home extends Component {
 					</Banner>
 				</Hero>
 				<Services />
+				<FeaturedRooms />
 			</>
 		);
 	}
