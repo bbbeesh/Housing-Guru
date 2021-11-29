@@ -25,6 +25,7 @@ export const SingleRooms = () => {
 	}
 	const {
 		name,
+		city,
 		description,
 		capacity,
 		size,
@@ -58,6 +59,9 @@ export const SingleRooms = () => {
 					</article>
 					<article class="info">
 						<h3>Info</h3>
+						<h6>
+							<b>city:</b> {city}
+						</h6>
 						<h6>
 							<b>price:</b> ₹{price}0
 						</h6>

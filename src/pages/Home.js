@@ -12,15 +12,20 @@ export default class Home extends Component {
 				<Hero>
 					<Banner
 						title="Affordable Accomodation"
-						subtitle="Starting at just ₹4999/Month!"
+						subtitle="Starting at just ₹1000/Month!"
 					>
 						<Link to="/rooms" className="btn-primary">
 							Our Rentals
 						</Link>
 					</Banner>
 				</Hero>
-				<Services />
+
 				<FeaturedRooms />
+				<div class="btn-center">
+					<Link to="/rooms" className="btn-primary">
+						View All Available Rentals
+					</Link>
+				</div>
 			</>
 		);
 	}

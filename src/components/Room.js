@@ -5,7 +5,7 @@ import defaultImg from "../images/room-1.jpeg";
 import PropTypes from "prop-types";
 
 export const Room = ({ room }) => {
-	const { name, slug, images, price } = room;
+	const { name, city, slug, images, price } = room;
 	return (
 		<article className="room">
 			<div className="img-container">
@@ -19,6 +19,7 @@ export const Room = ({ room }) => {
 				</Link>
 			</div>
 			<p className="room-info">{name}</p>
+			<p className="room-info">{city}</p>
 		</article>
 	);
 };
