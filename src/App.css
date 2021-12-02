@@ -479,6 +479,14 @@ h6 {
 	grid-row-gap: 2rem;
 	grid-column-gap: 40px;
 }
+.form-features {
+	width: 60vw;
+	margin: 0 auto;
+	margin-top: 2rem;
+	display: flex;
+	justify-content: left;
+	flex-direction: column;
+}
 .form-group {
 	text-transform: capitalize;
 }
@@ -486,6 +494,12 @@ h6 {
 	display: block;
 	letter-spacing: var(--mainSpacing);
 	margin-bottom: 0.5rem;
+}
+.form-group span {
+	display: block;
+	letter-spacing: var(--mainSpacing);
+	margin-bottom: 0.5rem;
+	margin-right: 0.5rem;
 }
 .form-control {
 	width: 100%;
@@ -506,14 +520,23 @@ h6 {
 	display: inline-block;
 	font-size: 0.8rem;
 	margin-left: 0.5rem;
+	margin-right: 0.5rem;
 }
 @media screen and (min-width: 776px) {
 	.filter-form {
 		width: 70vw;
 	}
+	.form-features {
+		width: 70vw;
+		flex-direction: row;
+	}
 }
 @media screen and (min-width: 992px) {
 	.filter-form {
+		width: 95vw;
+		max-width: 1170px;
+	}
+	.form-features {
 		width: 95vw;
 		max-width: 1170px;
 	}

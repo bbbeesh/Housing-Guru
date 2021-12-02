@@ -118,6 +118,58 @@ export const RoomsFilter = ({ rooms }) => {
 					/>
 				</div>
 				{/*End Price*/}
+				{/*Size*/}
+				<div class="form-group">
+					<label for="size">Size (SQFT)</label>
+					<div className="size-inputs">
+						<input
+							type="number"
+							name="minSize"
+							id="size"
+							value={minSize}
+							onChange={handleChange}
+							className="size-input"
+						/>
+						<input
+							type="number"
+							name="maxSize"
+							id="size"
+							value={maxSize}
+							onChange={handleChange}
+							className="size-input"
+						/>
+					</div>
+				</div>
+				{/*End Price*/}
+			</form>
+			<form className="form-features">
+				{/*Extras*/}
+				<div className="form-group">
+					<span>Features: </span>
+				</div>
+				<div className="form-group">
+					<span className="single-extra">
+						<input
+							type="checkbox"
+							name="breakfast"
+							id="beakfast"
+							onChange={handleChange}
+						/>
+						<label htmlFor="breakfast">breakfast</label>
+					</span>
+				</div>
+				<div className="form-group">
+					<span className="single-extra">
+						<input
+							type="checkbox"
+							name="pets"
+							id="pets"
+							onChange={handleChange}
+						/>
+						<label htmlFor="pets">pets</label>
+					</span>
+				</div>
+				{/*End Extras*/}
 			</form>
 		</section>
 	);
